@@ -5,10 +5,10 @@ hostname='localhost'
 port=$1
 
 # wait for the app to start
-sleep 5 
+sleep 15 
 
 # ping the app
-$status_code=$(curl --write-out %{http_code} --out /dev/null --silent ${hostname}:${port})
+status_code=$(curl --write-out %{http_code} --out /dev/null --silent ${hostname}:${port})
 
 if [ $status_code == 200 ];
 then
