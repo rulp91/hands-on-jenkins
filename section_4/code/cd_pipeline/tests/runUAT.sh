@@ -12,6 +12,7 @@ echo "$status1" # Would give you just the status
 
 # ping the app
 status_code=$(curl --write-out %{http_code} --out /dev/null --silent ${hostname}:${port})
+echo "$status_code" # Would give you just the status
 
 if [ $status_code == 200 ];
 then
