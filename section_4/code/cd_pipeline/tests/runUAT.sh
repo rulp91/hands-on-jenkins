@@ -16,7 +16,7 @@ echo "$STATUS"
 # ping the app
 status_code=$(curl --write-out %{http_code} --out /dev/null --silent ${hostname}:${port})
 
-if [ $status_code == 200 ];
+if [ $status1 == 200 ];
 then
 	echo "PASS: ${hostname}:${port} is reachable"
 else
