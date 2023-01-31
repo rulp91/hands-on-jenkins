@@ -1,12 +1,11 @@
 #!/bin/bash
 
 # set variables
-#hostname='localhost'
-hostname='0.0.0.0'
+hostname='localhost'
 port=$1
 
 # wait for the app to start
-sleep 5 
+sleep 25 
 
 status1=$(curl --write-out "%{http_code}" --silent --output /dev/null "${hostname}:${port}")
 echo "$status1" # Would give you just the status
