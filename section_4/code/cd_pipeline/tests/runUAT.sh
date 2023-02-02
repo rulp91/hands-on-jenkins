@@ -5,7 +5,7 @@ hostname='localhost'
 port=$1
 
 # wait for the app to start
-sleep 25 
+sleep 5 
 
 status1=$(curl --write-out "%{http_code}" --silent --output /dev/null "${hostname}:${port}")
 echo "$status1" # Would give you just the status
