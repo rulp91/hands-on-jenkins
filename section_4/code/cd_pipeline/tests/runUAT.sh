@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # set variables
-hostname='localhost'
+hostname='host.docker.internal'
 port=$1
 
 # wait for the app to start
